@@ -20,19 +20,19 @@ author: GenSC
 ###############################################
 
 navbar-links:
-  About: "pages/about"
+  About: 
     - Governance: "pages/about/governance"
     - Board: "pages/about/board-members"
     - Funding: "pages/about/funding"
     - Publications: "pages/about/publications"
     - Adopters: "pages/about/adopters"
-  Standards: "pages/standards-intro"
+  Standards: 
     - Standards: "/pages/standards-intro"
     - Checklists: "/pages/standards/checklists"
     - Extensions: "/pages/standards/extensions"
     - Implementation: "/pages/standards/implementation"
     - Previous versions: "https://github.com/GenomicsStandardsConsortium/mixs-legacy"
-  Meetings: "pages/meetings"
+  Meetings: 
     - Next Meeting: "pages/meetings/current"
     - All meetings: "pages/meetings"
     - Calendar: "pages/calendar"
