@@ -1,32 +1,22 @@
----
-layout: page
-slide_id: 2
----
-
-<div class="row">
-
-    <div class="col">
-	
-<p>Click <a href="" >here</a> to download a PDF of the schedule</p>    
-
-        {% for day in site.data.schedule %}
+<div>
+    <div>
+	        {% for day in site.data.schedule %}
         <div>
-       <!-- <h4 class="schedule-table-heading">Day {{ forloop.index }} - {{ day.dateReadable }}</h4> -->
-            <h5 class="schedule-table-heading">{{ day.dateReadable }}</h5>
-			<h4 class="schedule-table-heading">{{ day.title }}</h4>
-            <table class="table table-bordered table-striped table-hover table-responsive table-sm">
+            <h5>{{ day.dateReadable }}</h5>
+			<h4>{{ day.title }}</h4>
+            <table>
             {% for timeslot in day.timeslots %}
                     <thead>
                             <tr>
-                                <th class="bg-info text-center" style="vertical-align:middle">
+                                <th style="vertical-align:middle">
                                         <div>{{timeslot.startTime}}-{{timeslot.endTime}}</div>
                                 </th>
                                 {% if timeslot.type == "service" %}
-                                    <th class="bg-warning text-center">
-                                            <p class="text-muted">{{timeslot.title}}</p>
+                                    <th>
+                                            <p>{{timeslot.title}}</p>
                                     </th>
                                 {% else %}
-                                    <th class="bg-faded text-center">
+                                    <th>
 											<h5>{{timeslot.title}}</h5>
                                             {% if timeslot.speaker %}
                                             <h5 class="accordion">{{timeslot.speaker}}</h5>
@@ -45,7 +35,7 @@ slide_id: 2
                             <tr>
                                 <td width="20%">
                                 </td>
-                                <td class="bg-faded">
+                                <td>
                                     <p><b>{{event.title}}</b></p>
                                     {% if event.speakers %}
                                     <h5 class="accordion">{{event.speakers}}</h5>
@@ -61,7 +51,6 @@ slide_id: 2
         </div>
         {% endfor %}
 
-        {% include contact-us.html %}
     </div>
 	<script>
 		var acc = document.getElementsByClassName("accordion");
