@@ -38,7 +38,7 @@ navbar-links:
     - Calendar: "pages/calendar"
   Notices: "pages/blog"
   Projects: "pages/projects"
-  Contact: "pages/contact"
+  Contact:
     - Contact us: "pages/contact"
     - Join us: "pages/membership"
 
