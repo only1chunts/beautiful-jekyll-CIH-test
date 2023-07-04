@@ -1,11 +1,14 @@
+---
+layout: page
+title: Schedule
+---
 <div>
-    <div>
-	        {% for day in site.data.schedule %}
+{% for date in site.data.schedule %}
         <div>
-            <h5>{{ day.dateReadable }}</h5>
-			<h4>{{ day.title }}</h4>
+            <h5>{{ date.dateReadable }}</h5>
+			<h4>{{ date.title }}</h4>
             <table>
-            {% for timeslot in day.timeslots %}
+            {% for timeslot in date.timeslots %}
                     <thead>
                             <tr>
                                 <th style="vertical-align:middle">
@@ -50,8 +53,6 @@
             </table>
         </div>
         {% endfor %}
-
-    </div>
 	<script>
 		var acc = document.getElementsByClassName("accordion");
 		var i;
