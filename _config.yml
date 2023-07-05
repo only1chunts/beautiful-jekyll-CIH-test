@@ -10,37 +10,26 @@
 ############################
 
 # Name of website
-title: Genomic Standards Consortium
+title: GigaDB Author Guide
 
 # Your name to show in the footer
-author: GenSC
+author: GigaScience Press
 
 ###############################################
 # --- List of links in the navigation bar --- #
 ###############################################
 
 navbar-links:
-  About: 
-    - Governance: "pages/about/governance"
-    - Board: "pages/about/board-members"
-    - Funding: "pages/about/funding"
-    - Publications: "pages/about/publications"
-    - Adopters: "pages/about/adopters"
+  About: "pages/about"
   Standards: 
     - Standards: "/pages/standards-intro"
     - Checklists: "/pages/standards/checklists"
     - Extensions: "/pages/standards/extensions"
     - Implementation: "/pages/standards/implementation"
-    - Previous versions: "https://github.com/GenomicsStandardsConsortium/mixs-legacy"
-  Meetings: 
-    - Next Meeting: "pages/meetings/current"
-    - All meetings: "pages/meetings"
-    - Calendar: "pages/calendar"
+  Meetings: "pages/meetings"
   Notices: "pages/blog"
   Projects: "pages/projects"
-  Contact:
-    - Contact us: "pages/contact"
-    - Join us: "pages/membership"
+  Contact: "pages/contact"
 
 ################
 # --- Logo --- #
@@ -48,7 +37,7 @@ navbar-links:
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/Main_gsc_logo_2010.png"
+avatar: "/assets/img/GigaDB_logo.png"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: false
@@ -66,16 +55,16 @@ round-avatar: false
 # You can change the order that they show up on the page by changing the order here.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "someone@example.com"
-  rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
-  patreon: DeanAttali
-  youtube: c/daattali
+  email: "database@gigsciencejournal.com"
+#  rss: true  # remove this line if you don't want to show an RSS link at the bottom
+  facebook: GigaScience
+  github: gigascience
+  twitter: Giga_DB
+#  patreon: DeanAttali
+  youtube: GigaScienceJournal
 #  medium: yourname
 #  reddit: yourname
-#  linkedin: daattali
+  linkedin: gigascience
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
@@ -97,7 +86,7 @@ social-network-links:
 
 # If you want your website to generate an RSS feed, provide a description
 # The URL for the feed will be https://<your_website>/feed.xml
-rss-description: This website is a virtual proof that I'm awesome
+# rss-description: This website is a virtual proof that I'm awesome
 
 ###########################
 # --- General options --- #
@@ -112,7 +101,7 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"
+url-pretty: "GigaDB-Author-Guide"
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
 excerpt_length: 50
@@ -132,7 +121,7 @@ edit_page_button: true
 # Allow sub-menu items (second-level navigation menu items) to be longer than the top-level menu
 # If this setting is off, then long sub-menu words might get cut off
 # See https://github.com/daattali/beautiful-jekyll/issues/765 to understand the issue this setting can solve
-navbar-var-length: false
+navbar-var-length: true
 
 # The keywords to associate with your website, for SEO purposes
 #keywords: "my,list,of,keywords"
@@ -160,7 +149,7 @@ footer-hover-col: "#0085A1"
 
 #navbar-img: "/assets/img/bgimage.png"
 #footer-img: "/assets/img/bgimage.png"
-#page-img: "/assets/img/bgimage.png"
+page-img: "/assets/img/bgimage.png"
 
 # Suggest a colour for mobile browsers to use as the browser's theme. This is only supported by a few mobile browsers.
 #mobile-theme-col: "#0085A1"
@@ -267,7 +256,7 @@ date_format: "%B %-d, %Y"
 #################################################################################
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Toronto"
+timezone: "GMT"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
